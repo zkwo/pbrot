@@ -62,7 +62,8 @@ function toggleDark() {
 
       <!-- Content -->
       <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <Badge text="FREE PHOTO BOOTH" class="mb-6" />
+        <!--<Badge text="FREE PHOTO BOOTH" class="mb-6" />-->
+        <Badge text="FREE PHOTO BOOTH" :icon="Star" />
         
         <h1 class="text-5xl md:text-7xl font-extrabold mb-6">
           <span class="text-gray-800">Capture </span>
