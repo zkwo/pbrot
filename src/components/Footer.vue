@@ -8,14 +8,14 @@ const currentYear = new Date().getFullYear()
       <p class="text-gray-600 text-sm">
         Follow me on 
         <a 
-          href="https://www.instagram.com/helvetica12_/" 
+          href="https://www.instagram.com/kodiltensei/" 
           target="_blank" 
           class="text-purple-600 hover:text-purple-700 transition-colors font-medium"
         >
-          Instagram @helvetica12_
+        @kodiltensei
         </a>
       </p>
-      <p class="text-gray-400 text-xs mt-2">© {{ currentYear }} Serenity Booth. Made with 💜</p>
+      <p class="text-gray-400 text-xs mt-2">© {{ currentYear }} Covenant Booth. Made with ♡</p>
     </div>
   </footer>
 </template>
