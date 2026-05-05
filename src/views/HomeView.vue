@@ -2,10 +2,11 @@
 import { Moon, Sun } from 'lucide-vue-next'
 import { RouterLink } from 'vue-router'
 import Badge from '../components/Badge.vue'
-import { Camera, Sparkles, Zap, Download, Palette } from 'lucide-vue-next'
+import { Camera, Sparkles, Star } from 'lucide-vue-next'
+//import { Camera, Sparkles, Zap, Download, Palette } from 'lucide-vue-next'
 
 /* ⬇️ TAMBAHAN DI SINI */
-import { Camera, Sparkles, Zap, Download, Palette, Moon, Sun } from 'lucide-vue-next'
+//import { Camera, Sparkles, Zap, Download, Palette, Moon, Sun } from 'lucide-vue-next'
 import { ref, onMounted } from 'vue'
 
 const isDark = ref(false)
