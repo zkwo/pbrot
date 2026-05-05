@@ -1,25 +1,5 @@
 <script setup lang="ts">
 import { Moon, Sun } from 'lucide-vue-next'
-import { ref, onMounted } from 'vue'
-
-const isDark = ref(false)
-
-onMounted(() => {
-  isDark.value = document.documentElement.classList.contains('dark')
-})
-
-function toggleDark() {
-  isDark.value = !isDark.value
-
-  if (isDark.value) {
-    document.documentElement.classList.add('dark')
-    localStorage.setItem('theme', 'dark')
-  } else {
-    document.documentElement.classList.remove('dark')
-    localStorage.setItem('theme', 'light')
-  }
-}
- // end toggle  
 import { RouterLink } from 'vue-router'
 import Badge from '../components/Badge.vue'
 import { Camera, Sparkles, Zap, Download, Palette } from 'lucide-vue-next'
