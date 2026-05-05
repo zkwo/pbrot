@@ -1,4 +1,21 @@
-<script setup lang="ts">
+<script setup>
+defineProps({
+  text: String,
+  icon: Object
+})
+</script>
+
+<template>
+  <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-purple-100 text-purple-600 text-sm">
+    
+    <!-- ICON BISA DIGANTI -->
+    <component :is="icon" class="w-4 h-4" />
+
+    {{ text }}
+  </div>
+</template>
+
+<!-- <script setup lang="ts">--
 defineProps<{
   text: string
   variant?: 'primary' | 'secondary'
@@ -16,4 +33,4 @@ defineProps<{
   >
     {{ text }}
   </span>
-</template>
+</template>-->
