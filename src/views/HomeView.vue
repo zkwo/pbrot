@@ -29,6 +29,19 @@ import { Camera, Sparkles, Zap, Download, Palette } from 'lucide-vue-next'
   <div class="flex-1 flex flex-col">
     <!-- Hero Section -->
     <section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+  <!-- 🌙 DARK MODE BUTTON -->
+  <div class="absolute top-5 right-5 z-20">
+    <button 
+      @click="toggleDark"
+      class="p-3 rounded-xl bg-white/70 dark:bg-gray-800 backdrop-blur shadow-lg transition"
+    >
+      <Sun v-if="isDark" class="w-5 h-5 text-yellow-400" />
+      <Moon v-else class="w-5 h-5 text-gray-800 dark:text-white" />
+    </button>
+  </div>
+
+  <!-- Animated background elements -->
+  <div class="absolute inset-0 overflow-hidden">
       <!-- Animated background elements -->
       <div class="absolute inset-0 overflow-hidden">
         <div class="absolute top-20 left-10 w-72 h-72 bg-purple-200/40 rounded-full blur-3xl animate-pulse"></div>
